@@ -38,8 +38,19 @@
     background-color: red;
   }
   
-  /* Dropdown content (hidden by default) */
-  .dropdown-content {
+    /* Dropdown content (hidden by default) */
+
+    /* absolute - ertinya, kedudukan submenu adalah bergantung 
+    kepada kedudukan menu yang asal. Kalau 
+    dropdown menu tu berada pada item yang ketiga, maka, 
+    anak-anaknya akan berada di bawah item tu sendiri */
+
+    /* z-index: 1;
+    elemen HTML akan bertindih kalau kita ubah positionnya. 
+    Untuk mengelakkan dari terlindung, kita guna arahan z-index
+    untuk mengubah kedudukan lapisannya*/
+    
+    .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -47,6 +58,7 @@
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
+
   
   /* Links inside the dropdown */
   .dropdown-content a {
